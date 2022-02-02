@@ -4,40 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <title>Evan's Portfolio (in progress)</title>
+    <title>Evans Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-      <div class="text-box">
-        <div class="hover">
-          <h3>E V A N  M A R T I N</h3>
-          <h6>fullStackDeveloper</h6>
-        </div>
-      </div>
-        <img class="mainBackgroundImage" src="https://live.staticflickr.com/8279/8793440516_ea0fe53715_b.jpg" alt="dallas skyline background" class="mainBackgroundImage">
-        <div class="nameMain">
-          <div class="hover">
-            <h3>Evan Martin</h3>
-            <h6>Full Stack Developer</h6>
-          </div>
-        </div>
-        <div class="text-box">
-          <div class="hover">
-            <hr class="portfolioSections" style="margin:auto;width:20%">
-            <h3 class="w3-large w3-center"><a href=#skills>About Me</a></h3>
-            <h3 class="w3-large w3-center"><a href=#skills>Digital Presence</a></h3>
-            <h3 class="w3-large w3-center"><a href=#skills>Experience</a></h3>
-            <h3 class="w3-large w3-center"><a href=#skills>Skills</a></h3>
-            <h3 class="w3-large w3-center"><a href=#projects>Projects</a></h3>
+
+    <nav class="navbar">
+        <ul class="link-group">
+            <li class="link"><a href="#">home</a></li>
+            <li class="link"><a href="#">projects</a></li>
+            <li class="link"><a href="#">about</a></li>
+            <li class="link"><a href="#">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- home section -->
+
+    <section class="home-section active">
+        <h1 class="hero-heading">hello, i am <br> Evan</h1>
+        <img src="pics/LinkedInPicture.jpg" class="home-img" alt="">
+    </section>
+
+    <!-- project section -->
+
+    <section class="project-section">
+        <h1 class="project-heading">P r o j e c t s</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="pics/BlogScreenshot.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">Blog Project</h1>
+                    <p class="project-info">
+                        Blog Project: created with Javascript, HTML, CSS, React, and was hosted with AWS.
+                    </p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github">github repo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="pics/DrumKit.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">Drumkit Project</h1>
+                    <p class="project-info">
+                        Drunkit Project: created with Javascript, HTML, CSS, and React.js.
+                    </p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github">github repo</button>
+                    </div>
+                </div>
             </div>
         </div>
-    
+    </section>
+
+    <!-- about section -->
+
+    <section class="about-section">
+        <div class="about">
+            <div class="about-img-container">
+                <img src="pics/LinkedInPicture.jpg" class="about-img" alt="">
+                <button class="download-cv-btn">download CV</button>
+            </div>
+            <p class="about-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue nibh sed fermentum gravida. Pellentesque elementum gravida pretium. Suspendisse nec tristique metus. Etiam vel pellentesque felis. Fusce posuere hendrerit vehicula. Phasellus quis sapien vestibulum, vehicula est vel, ultrices enim. Donec eget sapien diam. Donec blandit convallis convallis. Nullam sed posuere metus. Mauris tempor dui a tristique posuere. Quisque sed tortor nec ante fringilla porta. Nulla leo nibh, finibus rhoncus ultricies eu, feugiat et sem. Maecenas felis tellus, tristique nec ornare a, imperdiet et ipsum. Donec orci ligula, euismod id sagittis quis, faucibus non justo. Duis dignissim tellus non egestas condimentum.
+
+                Etiam sit amet purus quis ex accumsan vehicula. In justo elit, accumsan a velit ut, vehicula tincidunt sapien. Nam ut lorem ultrices ex eleifend rhoncus bibendum eget velit. Ut vel venenatis neque, vel varius dolor. Pellentesque auctor ultricies felis quis dictum. Pellentesque varius cursus molestie. Nunc mattis felis a tortor sagittis, mollis maximus leo elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In hac habitasse platea dictumst. Aliquam venenatis purus sem, eget tincidunt erat ultrices ut. In hac habitasse platea dictumst.
+            </p>
+        </div>
+
+    <!-- skills section -->
+        <div class="skill-section">
+            <h1 class="heading">Skills</h1>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="pics/HTML5badge.png" class="skill-img" alt="">
+                    <!-- <div class="skill-level">98%</div> this is the percentage marker-->
+                    <h1 class="skill-name">HTML</h1>
+                    <p class="skill-info">This is where information about the HTML skill will go....</p>
+                </div>
+                <div class="skill-card">
+                    <img src="pics/CSS3badge.png" class="skill-img" alt="">
+                    <!-- <div class="skill-level">98%</div> this is the percentage marker-->
+                    <h1 class="skill-name">CSS</h1>
+                    <p class="skill-info">This is where information about the HTML skill will go....</p>
+                </div>
+                <div class="skill-card">
+                    <img src="pics/JavaScriptBadge.png" class="skill-img" alt="">
+                    <!-- <div class="skill-level">98%</div> this is the percentage marker-->
+                    <h1 class="skill-name">JavaScript</h1>
+                    <p class="skill-info">This is where information about the HTML skill will go....</p>
+                </div>
+                <div class="skill-card">
+                    <img src="pics/ReactBadge.png" class="skill-img" alt="">
+                    <!-- <div class="skill-level">98%</div> this is the percentage marker-->
+                    <h1 class="skill-name">React</h1>
+                    <p class="skill-info">This is where information about the HTML skill will go....</p>
+                </div>
+            </div>
+        </div>
+
+        <!--timeline section-->
+        <div class="timeline">
+            <h1 class="heading">Education and Experience</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">2021</h1>
+                    <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora perspiciatis voluptatum culpa perferendis minus sapiente corrupti cum neque temporibus quos, consequatur esse impedit dignissimos beatae eaque distinctio obcaecati. Ipsam, architecto!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">2021</h1>
+                    <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora perspiciatis voluptatum culpa perferendis minus sapiente corrupti cum neque temporibus quos, consequatur esse impedit dignissimos beatae eaque distinctio obcaecati. Ipsam, architecto!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">2021</h1>
+                    <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora perspiciatis voluptatum culpa perferendis minus sapiente corrupti cum neque temporibus quos, consequatur esse impedit dignissimos beatae eaque distinctio obcaecati. Ipsam, architecto!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">2021</h1>
+                    <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora perspiciatis voluptatum culpa perferendis minus sapiente corrupti cum neque temporibus quos, consequatur esse impedit dignissimos beatae eaque distinctio obcaecati. Ipsam, architecto!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">2021</h1>
+                    <p class="card-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora perspiciatis voluptatum culpa perferendis minus sapiente corrupti cum neque temporibus quos, consequatur esse impedit dignissimos beatae eaque distinctio obcaecati. Ipsam, architecto!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="contact-section">
+        <form class="contact-form" action="https://formsubmit.co/evanemartin3@gmail.com" method="POST">
+            <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
+            <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
+            <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+            <button type="submit" class="form-submit-btn">contact</button>
+        </form>
+        <!-- map -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d214518.58785752198!2d-97.0597765895405!3d32.849145332544516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1643829726558!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
+        </div>
+    </section>
+
+    <script src="app.js"></script>
     
 </body>
 </html>

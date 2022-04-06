@@ -203,17 +203,17 @@ body{
   text-align: center;
 }
 
-.project-btn-grp{
+/* .project-btn-grp{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-}
+} */
 
-/* .project-btn-grp{
+.project-btn-grp{
   display: flex;
   align-items: center;
   justify-content: space-around;
-} */
+}
 
 .project-btn{
   height: 40px;
@@ -247,19 +247,23 @@ body{
   opacity: 0;
   transition: 1s;
 }
+/* .about {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 65%;
+  grid-gap: 40px;
+} */
 
 .about{
   width: 100%;
-  display: flexbox;
-  /* display: grid;
-  grid-template-columns: 30% 65%;
-  grid-gap: 40px; */
-}
+  display: flex;
+  flex-direction: column;
+} 
 
-.about-img-container{
-  position: relative;
-  /* justify-content: center; */
-}
+ /* .about-img-container {
+  position: fixed;
+  justify-content: center;  
+} */
 
 .about-info{
   color: #fff;
@@ -277,7 +281,7 @@ body{
 }
 
 .download-cv-btn{
-  position: absolute;
+  position: relative;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);

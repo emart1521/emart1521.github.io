@@ -64,11 +64,27 @@ body{
   height: 100vh;
   padding: 0 150px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
   top: 0;
   opacity: 0;
   transition: 1s;
+}
+
+.heroHeading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter {
+  text-align: center;
+  cursor: pointer;
+  font-size: 42px;
+  color: #ffff;
 }
 
 .hero-heading{
@@ -126,13 +142,19 @@ body{
 }
 
 .project-container{
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 100px;
+  grid-gap: 100px; */
+  display: flex;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 50px;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
 }
 
 .project-card{
   height: 400px;
+  max-width: 500px;
   position: relative;
 }
 
@@ -165,7 +187,7 @@ body{
 
 .project-content{
   position: relative;
-  padding: 40px;
+  padding: 15px, 0, 0, 5px;
   color: black;
   text-shadow: blue;
   transition: 1s;
@@ -176,7 +198,8 @@ body{
   font-size: 50px;
   text-transform: capitalize;
   text-align: center;
-  font-weight: 300;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(107, 102, 102, 0.369);
 }
 
 .project-info{
@@ -214,7 +237,7 @@ body{
 } */
 
 .project-card:hover .project-img{
-  filter: blur(20px);
+  filter: blur(50px);
 }
 
 .project-card:hover .project-content{
@@ -276,6 +299,7 @@ body{
   cursor: pointer;
   transition: .5s;
   background: rgba(0, 0, 0, 0.5s);
+  box-shadow: 0 4px 8px 0 rgba(250, 247, 247, 0.2), 0 6px 20px 0 rgba(253, 251, 251, 0.19);
 }
 
 .download-cv-btn:hover{
@@ -525,3 +549,7 @@ body{
   height: 100%;
   border-radius: 5px;
 }
+/* .light-mode{
+  background-color: #ffff;
+  color: black;
+} */

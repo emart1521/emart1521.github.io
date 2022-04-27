@@ -22,9 +22,79 @@
 
     <!-- home section -->
 
-    <section class="home-section active">
-        <h1 class="hero-heading">hello, i am <br> Evan</h1>
-        <img src="pics/LinkedInPicture.jpg" class="home-img" alt="">
+    <section class="home-section active" id="heroHeading">
+        <!-- <h1 class="hero-heading">Evan Martin</h1> -->
+        <!-- <style>
+            @keyframes letter-animation {
+            from {
+                background: #ffffff;
+            } to {
+                background: #fbf2c0;
+            }
+        }
+        </style> -->
+        <script type="text/javascript">
+            var data = {
+                'E': { name: '', sound: 'sounds/Hello.mp3' },
+                'V': { name: '', sound: 'sounds/Welcome.mp3' },
+                'A': { name: '', sound: 'sounds/To.mp3' },
+                'N': { name: '', sound: 'sounds/EvansAudio.mp3' },
+                'M': { name: '', sound: 'sounds/Portfolio.mp3' },
+                'A ': { name: '', sound: 'sounds/Please.mp3' },
+                'R': { name: '', sound: 'sounds/Feel.mp3' },
+                'T': { name: '', sound: 'sounds/Free.mp3' },
+                'I': { name: '', sound: 'sounds/To_.mp3' },
+                'N ': { name: '', sound: 'sounds/Explor.mp3' },
+            };
+    
+            var heroHeading = document.getElementById('heroHeading');
+    
+            function construct() {
+                for(var key in data) {
+                    var letterEl = document.createElement('div');
+                    letterEl.classList.add('letter');
+                    var h2 = document.createElement('h2');
+                    h2.textContent = key;
+                    var span = document.createElement('span');
+                    span.textContent = data[key].name;
+    
+                    letterEl.appendChild(h2);
+                    letterEl.appendChild(span);
+                    heroHeading.appendChild(letterEl);
+    
+                    data[key].el = letterEl;
+    
+                    letterEl.addEventListener('click', function(event) {
+                        var key = event.currentTarget.querySelector('h2').textContent;
+                        playLetter(key);
+                    });
+                }
+            };
+    
+            // function handleKeyEvents(event) {
+            //     playLetter(event.key.toUpperCase());
+            // };
+    
+            function removeAnimation(event) {
+                event.currentTarget.style.WebkitAnimation = 'none';
+                event.currentTarget.style.animation = 'none';
+            };
+    
+            function playLetter(key) {
+                var audio = new Audio();
+                audio.src = data[key].sound;
+                audio.play();
+    
+                data[key].el.style.WebkitAnimation = 'letter-animation 1s';
+                data[key].el.style.animation = 'letter-animation 1s';
+                data[key].el.addEventListener("webkitAnimationEnd", removeAnimation);
+                data[key].el.addEventListener("animationend", removeAnimation);
+            };
+    
+            construct();
+            window.addEventListener('keydown', handleKeyEvents);
+        </script>
+        <!-- <button onclick="lightMode()">Would you like the light turned on?</button> -->
     </section>
 
     <!-- project section -->
@@ -46,7 +116,7 @@
                 <div class="project-content">
                     <h1 class="project-title">Blog Project</h1>
                     <p class="project-info">
-                        Blog Project: created with Javascript, HTML, CSS, React, and was hosted with AWS.
+                        Blog Project: created with JavaScript, HTML, CSS, React, and was hosted with AWS.
                     </p>
                     <div class="project-btn-grp">
                         <a href="https://github.com/emart1521/Evans-React-Blog" target="_blank">
@@ -59,10 +129,24 @@
                 <div class="project-content">
                     <h1 class="project-title">Drumkit Project</h1>
                     <p class="project-info">
-                        Drumkit Project: created with Javascript and HTML.
+                        Drumkit Project: created with JavaScript and HTML.
                     </p>
                     <div class="project-btn-grp">
                         <a href="https://github.com/emart1521/Evans-Drum-Kit" target="_blank">
+                        <button class="project-btn github">github repo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="pics/WeatherAppNY.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">Vue Weather App</h1>
+                    <p class="project-info">
+                        Vue.js Weather: created with JavaScript, Vue.js, CSS, and HTML.
+                    </p>
+                    <div class="project-btn-grp">
+                        <a href="https://github.com/emart1521/Evans-Vue-Weather" target="_blank">
                         <button class="project-btn github">github repo</button>
                         </a>
                     </div>
